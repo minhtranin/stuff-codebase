@@ -14,7 +14,7 @@ services:
     build: ../tcem-auth-services
     container_name: user-services
     volumes:
-      - ../tcem-auth-services:/tcem-auth-services
+      - ../tcem-auth-services:/tcem-auth-services:cached
     working_dir: /tcem-auth-services/
     restart: always
     ports:
